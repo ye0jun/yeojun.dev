@@ -40,7 +40,7 @@ const HeaderTitle: FC = () => {
                 <Title>즐거운</Title>
             </TitleContainer>
             <SubTitle>개발자 진여준입니다.</SubTitle>
-            <BlinkCursor component={SubTitle} />
+            <BlinkCursor component={SubTitle} text='|' />
         </Container>
     );
 }

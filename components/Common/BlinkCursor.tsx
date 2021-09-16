@@ -17,11 +17,12 @@ const AnimatedComponent = (component: AnyStyledComponent): AnyStyledComponent =>
 
 type BlinkCursorProps = {
     component: AnyStyledComponent;
+    text: string;
 };
 
-const BlinkCursor: FC<BlinkCursorProps> = ({ component }) => {
+const BlinkCursor: FC<BlinkCursorProps> = ({ component, text }) => {
     const Component = AnimatedComponent(component);
-    return <Component>|</Component>
+    return <Component>{text}</Component>
 };
 
 export default BlinkCursor;
